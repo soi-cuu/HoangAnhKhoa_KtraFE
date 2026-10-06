@@ -1,0 +1,196 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>KtraFE</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Font Awesome 5 Free</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            color: #007bff;
+        }
+
+
+        .custom-icon::before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            margin-right: 8px;
+        }
+
+        .icon-solid::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+
+        .icon-brand::before {
+            font-family: "Font Awesome 5 Brands";
+            font-weight: 400;
+        }
+
+
+        .icon-mic::before {
+            content: "\f130";
+            color: #e74c3c;
+        }
+
+        .icon-aws::before {
+            content: "\f375";
+            color: #ff9900;
+        }
+
+        .rating-outer {
+            position: relative;
+            color: #ccc;
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .rating-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            color: #f39c12;
+        }
+
+            .rating-outer::before,
+            .rating-inner::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f005 \f005 \f005 \f005 \f005";
+            }
+
+        .rating-outer::before {
+            font-weight: 400;
+        }
+
+        .rating-inner::before {
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">BÀI THỰC HÀNH FONT AWESOME 5 FREE</h1>
+
+
+    <div class="section">
+        <h2>1. Thay đổi Màu sắc & Kích thước (Color & Sizing)</h2>
+        <p>Kích thước tăng dần và màu sắc khác nhau:</p>
+        <i class="fas fa-clock fa-xs" style="color: red;"></i>
+        <i class="fas fa-clock fa-sm" style="color: blue;"></i>
+        <i class="fas fa-clock fa-lg" style="color: green;"></i>
+        <i class="fas fa-clock fa-2x" style="color: pink;"></i>
+        <i class="fas fa-clock fa-3x" style="color: #333;"></i>
+    </div>
+
+
+    <div class="section">
+        <h2>2. Danh sách Icon & Độ rộng cố định (List & Fixed-Width)</h2>
+        <ul class="fa-ul">
+
+            <li><span class="fa-li"><i class="fas fa-check-square" style="color: green;"></i></span>Mục danh sách hoàn thành</li>
+            <li><span class="fa-li"><i class="fas fa-spinner fa-pulse" style="color: orange;"></i></span>Mục đang xử lý (Pulse)</li>
+            <li><span class="fa-li"><i class="fas fa-square"></i></span>Mục chưa hoàn thành</li>
+
+        </ul>
+
+        <p><strong>Căn chỉnh với Độ rộng cố định (fa-fw):</strong></p>
+        <div><i class="fas fa-arrows-alt-v fa-fw" style="background:#eee;"></i> Icon 1 (Mũi tên)</div>
+        <div><i class="fas fa-band-aid fa-fw" style="background:#eee;"></i> Icon 2 (Băng cá nhân)</div>
+        <div><i class="fab fa-bluetooth-b fa-fw" style="background:#eee;"></i> Icon 3 (Bluetooth)</div>
+    </div>
+
+
+    <div class="section">
+        <h2>3. Hiệu ứng Xoay & Lật Icon (Animation, Rotate & Flip)</h2>
+        <p><strong>Xoay liên tục (Spin & Pulse):</strong></p>
+        <i class="fas fa-spinner fa-spin fa-2x" style="color: #007bff;"></i>
+        <i class="fas fa-cog fa-spin fa-2x" style="color: #28a745;"></i>
+        <i class="fas fa-cog fa-pulse fa-2x" style="color: #dc3545;"></i>
+
+        <p><strong>Xoay góc & Lật:</strong></p>
+        <i class="fas fa-horse fa-2x"></i>
+        <i class="fas fa-horse fa-2x fa-rotate-90"></i>
+        <i class="fas fa-horse fa-2x fa-rotate-180"></i>
+        <i class="fas fa-horse fa-2x fa-flip-horizontal"></i>
+    </div>
+
+
+    <div class="section">
+        <h2>4. Ghép Icon & Trích dẫn (Stacking & Pulled)</h2>
+        <p><strong>Ghép icon (Stacking):</strong></p>
+
+        <span class="fa-stack fa-lg">
+            <i class="fas fa-circle fa-stack-2x" style="color: #1da1f2;"></i>
+            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+
+
+        <span class="fa-stack fa-lg">
+            <i class="fas fa-camera fa-stack-1x"></i>
+            <i class="fas fa-ban fa-stack-2x" style="color: red;"></i>
+        </span>
+
+        <p><strong>Trích dẫn bài viết (Bordered & Pulled Left):</strong></p>
+        <p style="clear: both;">
+            <i class="fas fa-quote-left fa-3x fa-pull-left fa-border"></i>
+            Font Awesome 5 giúp việc tích hợp icon trở nên vô cùng đơn giản. Bạn có thể dễ dàng căn chỉnh, định dạng kích thước, màu sắc và thêm hiệu ứng chuyển động chỉ bằng các lớp (class) CSS có sẵn.
+        </p>
+    </div>
+
+
+    <div class="section">
+        <h2>5. Sử dụng CSS Pseudo-elements (Nâng cao)</h2>
+        <p>Thêm icon trực tiếp qua CSS <code>::before</code> mà không dùng thẻ <code>&lt;i&gt;</code> trong HTML:</p>
+
+        <h3>
+            <span class="custom-icon icon-solid icon-mic">Microphone</span>
+            <span class="custom-icon icon-brand icon-aws">Amazon AWS</span>
+        </h3>
+
+
+        <div style="text-align: center; margin-top: 15px;">
+            <span class="rating-outer">
+                <span class="rating-inner" style="width: 85%;"></span>
+            </span>
+            <span>(85% - 4.25 / 5 sao)</span>
+        </div>
+    </div>
+
+</body>
+</html>
